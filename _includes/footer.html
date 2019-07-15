@@ -1,0 +1,45 @@
+
+
+<!--/ Footer Starts /-->
+<footer class="container-fluid footer">
+	<section class="container">
+		<div class="row">
+			<div class="col-lg-4 col-md-4 footleft">
+				<ul>
+					{% for item in site.data.footer.nav %}
+					<li><a href="{{ item.url }}">{{ item.name }}</a></li>
+					{% endfor %}
+				</ul>
+			</div>
+
+			<div class="col-lg-4 col-md-4 footmdl">
+				<p>{{ site.data.footer.about }}</p>
+				<ul>
+					{% for item in site.socialMedia%}
+						<li><a href="{{ item.url }}"><img src="{{ item.icon }}" alt="{{ item.name }}"> </a></li>
+					{% endfor %}
+				</ul>
+			</div>
+
+			<div class="col-lg-4 col-md-4 footright">
+				<figure><img src="{{ site.data.footer.logo | relative_url }}" alt=""></figure>
+				<p>{{ site.data.footer.copyright }}</p>
+			</div>
+		</div>
+	</section>
+</footer>
+<!--/ Footer End /-->
+	<script defer src="{{ "/assets/js/remove_meta.js" | relative_url }}" type="text/javascript"></script>
+	
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+		crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+		crossorigin="anonymous"></script>
+
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->	
+	<script src="{{ '/assets/js/float-panel.js' | relative_url }}" type="text/javascript"></script>
+
+</body>
+</html>

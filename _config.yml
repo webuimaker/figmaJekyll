@@ -1,0 +1,77 @@
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+title: Cálculo Jurídico
+email: contato@calculojuridico.com.br
+description: >- # this means to ignore newlines until "baseurl:"
+  Cálculo Jurídico - Cálculos para Advogados
+baseurl: "/" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+github_username:  MauricioMoraes
+lang: pt_BR
+
+# Build settings
+markdown: kramdown
+sass:
+  # style: compressed
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  
+  
+socialMedia:
+ - name: "facebook"
+   url: "#"
+   icon: "/assets/images/fb.png" 
+ - name: "youtube"
+   url: "#"
+   icon: "/assets/images/youtube.png" 
+ - name: "facebook"
+   url: "instagram"
+   icon: "/assets/images/insta.png" 
+
+collections:
+  authors:
+    output: true
+  videos:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: "authors"
+    values:
+      layout: "author"
+  - scope:
+      path: ""
+      type: "videos"
+    values:
+      layout: "video"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - .gitignore
+  - README.md
+  - docker-compose.yml

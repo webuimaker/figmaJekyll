@@ -1,0 +1,17 @@
+list:
+ - heading: "Ao invés de perder horas preenchendo dados do CNIS…"
+   description: "… importe em segundos os períodos e salários de contribuição pro Cálculo Jurídico. A ferramenta avançada de importação importa dados de maneira segura, usando os parâmetros que fazem sentido para o seu cliente."
+   image: /assets/images/feature1.png
+ - heading: "Ao invés de ter um trabalhão pra fazer vários cálculos…"
+   description: "… tenha o resultado de várias espécie sem precisar colocar nenhum dado a mais. O Cálculo Jurídico te mostra todas as possibilidades que o seu cliente tem de uma só vez e no mesmo lugar. Assim fica fácil descobrir qual aposentadoria seu cliente já tem direito ou quando ele vai se aposentar com cada uma das espécies possíveis."
+   image: /assets/images/feature2.png
+ - heading: "Ao invés de deixar o INSS decidir quanto você vai ganhar…"
+   description: "… tenha o resultado da liquidação em 3 minutinhos e não deixe o INSS tirar dinheiro seu e do seu cliente. Com uma liquidação simples de fazer, você vai identificar rapidamente erros nos cálculos do INSS e evitar grandes perdas nos seus processos."
+   image: /assets/images/feature3.png
+ - heading: "Ao invés de se bater pra entender programas confusos…"
+   description: "…siga o fluxo simples de entender do programa, que vai te guiando e mostrando apenas as informações que você precisa preencher na hora certa. Se precisar, você também vai ter em mãos 4 sistemas de suporte que te mostram tudo o que você precisa saber. São vídeos tutoriais, tours guiados pelo programa, ícones de ajuda em todos os campos, base de conhecimento e ainda um canal de suporte especializado dentro do próprio programa."
+   image: /assets/images/feature4.png
+fulltext:
+ heading: "…e muito mais…"
+ text: "<strong>… tenha em mão um programa desenvolvido especialmente para resolver seus problemas de cálculos previdenciários. Se você leva a sério o Direito Previdenciário</strong>,
+         vai perceber que o CJ foi desenvolvido por quem realmente trabalha com previdenciário no dia a dia, aliado à engenharia de qualidade. Tenha em mãos uma ferramenta que libera seu tempo pra advogar,aumenta o valor das suas ações e ainda te coloca na frente do mercado."

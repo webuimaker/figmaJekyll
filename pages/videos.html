@@ -1,0 +1,18 @@
+---
+layout: default
+title: Videos
+permalink: videos
+---
+
+https://www.figma.com/file/YVceRKtpaULwsZWLKJ9MaEiW/SIte-CJ?node-id=95%3A0
+
+<h1>Latest Videos</h1>
+
+<ul>
+  {% for video in site.videos %}
+    <li>
+      <h2><a href="{{ video.url | relative_url }}">{{ video.title }}</a></h2>
+      <p>{{ video.excerpt }}</p>
+    </li>
+  {% endfor %}
+</ul>

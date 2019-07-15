@@ -1,0 +1,43 @@
+<!--/ Mdl Container /-->
+<section class="container-fluid mdlcontainer2">
+	<div class="row">
+		<div class="container mdlcontainer">
+			<div class="row">
+				<div class="col-lg-12 col-md-12 headingtxt">
+					<h4>{{ site.data.produto.heightlight.SectionTitle }}</h4>
+					<h3>{{ site.data.produto.heightlight.SectionSubTitle }}</h3>
+				</div>
+			</div>
+			<!--/ Home Page Grids /-->
+			<div class="col-md-12">
+				<div class="row text-center homegrid2">
+					{% for item in site.data.produto.heightlight.list %}				
+						<div class="col-md-4 align-items-stretch">
+							<div class="prodcol">
+								<div class="image">
+									<img src="{{ item.image }}" alt="">
+								</div>
+								<div class="content">
+									<p>{{ item.description }}</p>
+								</div>
+							</div>
+						</div>
+					{% endfor %}
+				</div>
+
+				<div class="cta-text-content text-center">
+					<div class="new-btn"><a href="{{ site.data.produto.heightlight.CTA.url }}">{{ site.data.produto.heightlight.CTA.text }}</a></div>
+					<div class="text-content">
+						<p>{{ site.data.produto.heightlight.info }}</p>
+					</div>
+				</div>
+			</div>
+			<!--/ Home Page Grids Ends /-->
+
+		</div>
+	</div>
+</section>
+<!--/ Mdl Container End /-->
+
+
+

@@ -1,0 +1,25 @@
+
+<div class="ml-auto mr-auto above-footer">
+<div class="col-lg-12 col-md-12 headingtxt">
+	<h4 class="pr-2 pl-2">{{ site.data.produto.featuresList.SectionTitle }}</h4>
+	<h3>{{ site.data.produto.featuresList.SectionSubTitle }}</h3>
+</div>
+<div class="row align-items-center">
+	{% for numberlist in site.data.produto.featuresList.lists %}				
+		<div class="col-md-12">
+			<div class="full-info">
+			  <div class="row align-items-center">
+				<div class="col-3 col-md-2">
+					<h6><span>#{{ forloop.index0 }}</span></h6>
+				</div>
+				<div class="col-9 col-md-10">
+					<h6>{{ numberlist.item }}</h6>
+				</div>
+			</div>
+			</div>
+		</div>
+	{% endfor %}
+	<div class="new-btn ml-auto mr-auto"><a href="{{ site.data.produto.featuresList.CTA.url }}">{{ site.data.produto.featuresList.CTA.text }}</a> </div>
+
+</div>
+</div>

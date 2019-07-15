@@ -1,0 +1,14 @@
+enable: true
+SectionTitle: VEJA COMO
+SectionSubTitle: "Advogados <span>lucram mais</span> com o Cálculo Jurídico"
+list:
+ - description: "Importação dos dados do CNIS permite você realizar <strong>cálculos complexos em alguns segundos com precisão</strong>"
+   image: /assets/images/Clock.png
+ - description: "Você <strong>não precisa ser nenhum especialista</strong> em cálculos graças a nossa plataforma simples e Tours Guiados"
+   image: /assets/images/Tour.png
+ - description: "Você pode acessar todos seus cálculos de qualquer lugar, o <strong>programa é totalmente online.</strong>"
+   image: /assets/images/cloud.png
+CTA:
+ text: "Comece a usar o Cálculo Jurídico Hoje"
+ url: "#"
+info: "72% dos nossos clientes sofriam com outro software antes de conhecerem o CJ."

@@ -1,0 +1,16 @@
+enable: true
+SectionTitle: VEJA O QUE
+SectionSubTitle: "o <span>Calculo Juridico</span> faz por voce"
+list:
+ - heading: Voce ganha tempo
+   image: /assets/images/img1.png
+   info: Lorem ipsum dolor sit amet, consectetur adipiscing elit. In scelerisque augue tempus diam placerat.
+ - heading: Simples de fazer e entender
+   image: /assets/images/img2.png
+   info: Lorem ipsum dolor sit amet, consectetur adipiscing elit. In scelerisque augue tempus diam placerat.
+ - heading: Oportunidade de ganhar mais
+   image: /assets/images/img3.png
+   info: Lorem ipsum dolor sit amet, consectetur adipiscing elit. In scelerisque augue tempus diam placerat.
+ - heading: Acessvel de qualquer lugar
+   image: /assets/images/img4.png
+   info: Lorem ipsum dolor sit amet, consectetur adipiscing elit. In scelerisque augue tempus diam placerat.

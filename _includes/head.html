@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="utf-8"><!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description"  content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
+    <!-- Bootstrap CSS -->
+
+	<title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.name | escape }} {{ site.project.version | escape }}{% endif %}</title>
+
+	<link rel="shortcut icon" type="image/x-icon" href="{{ "/images/favicon.png" | relative_url }}">
+
+    <link rel="canonical" href="{{ page.url | replace: 'index.html', '' | absolute_url }}">
+    <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+	<!-- Custom Css -->
+	<link href="{{ "/assets/css/custom.css" | relative_url }}" rel="stylesheet">
+	<link href="{{ "/assets/css/custommedia.css" | relative_url }}" rel="stylesheet">	
+    <link rel="stylesheet" href="{{ "/assets/css/styles.css" | relative_url }}">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+	{% if jekyll.environment == "production" %}
+      <script src="my-analytics-script.js"></script>
+    {% endif %}
+
+    {% feed_meta %}
+    {% seo %}
+</head>
+<body>
+

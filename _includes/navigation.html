@@ -1,0 +1,39 @@
+<!--/ Nav Bar Top /-->
+	<nav class="navbar navbar-b navbar-trans navbar-expand-lg fixed-top mainNav {% if page.header == 'blueFixed' %} mainNav2{% endif %}" data-top="0" data-scroll="200">
+		<div class="container">
+			<a class="navbar-brand js-scroll" href="{{ site.baseurl }}">
+				{% if page.header == 'blueFixed' %}
+					<img src="{{ "/assets/images/logo-calculo-juridico.svg" | relative_url }}" class="logo-dark" alt="">
+				{% else %}
+					<img src="{{ "/assets/images/logo-calculo-juridico.png" | relative_url }}" class="logo-dark" alt="">
+					<img src="{{ "/assets/images/logo-calculo-juridico-cinza.png" | relative_url }}" class="logo-light" alt="">
+				{% endif %}
+				</a>
+			<button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault"
+				aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
+				<span></span>
+				<span></span>
+				<span></span>
+			</button>
+			<div class="navbar-collapse collapse justify-content-end" id="navbarDefault">
+				<ul class="navbar-nav">
+
+					{% for item in site.data.navigation %}
+						{% if item.name == 'Entrar' %} 
+							<li class="nav-item scale">|</li>
+							<li class="seperator"></li>
+							<li class="nav-item {% if page.url == item.link %}active{% endif %}" ><a class="nav-link js-scroll btnlast" href="{{ item.url }}">{{ item.name }}</a></li>
+						{% else %}
+							 <li class="nav-item {% if forloop.last %} btnlast{% endif %} {% if page.url == item.link %}active{% endif %}" >
+								<a class="nav-link js-scroll" href="{{ item.url }}" {% if item.target == 'new' %}target="_blank" {% endif %}>
+								  {{ item.name }}
+								</a>
+							  </li>
+						{% endif %}
+					{% endfor %}
+					<li class="copyright">© 2019 Calculo Juridico</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<!--/ Nav End /-->

@@ -1,0 +1,26 @@
+{% include head.html %}
+{% include header.html %}
+{% include navigation.html %}
+{% if page.Highlight.enable == 'true' %}
+	{% include highlight.html %}
+{% endif %}
+{% if page.Features.enable == 'true' %}
+	{% include features.html %}
+{% endif %}
+{% if page.numbers.enable == 'true' %}
+	{% include numbers.html %}
+{% endif %}
+{% if page.testimony.enable == 'true' %}
+	{% include testimony.html %}
+{% endif %}
+{% if page.featuresColumn.enable == 'true' %}
+	{% include features-column.html %}
+{% endif %}
+{% if page.featuresList.enable == 'true' %}
+	{% include features-list.html %}
+{% endif %}
+
+<div class="container-fluid rel">
+	{{ content }}
+</div>
+{% include footer.html %}

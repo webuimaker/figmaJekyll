@@ -1,0 +1,42 @@
+<!-- /Features section Starts/ -->
+
+    <div class="features container">
+        <div class="row featuresgrid">
+			{% for item in site.data.produto.features.list %}	
+				<div class="featureitem col-lg-12 col-md-12 align-items-center">
+					<div class="bluebox">
+						<div class="boxcontentarea">
+							<h2>{{ item.heading }}</h2>
+							<p>{{ item.description }}</p>
+						</div>
+					</div>
+					
+					<div class="imgarea"><img src="{{ item.image }}" alt=""></div>
+				</div>
+			{% endfor %}
+		</div>
+		
+		
+        <!-- /Note Box starts/ -->
+
+        <div class="col-md-12 note-box">
+            <div class="row">
+                <div class="col-md-10 ml-auto note-details">
+                    <div class="row align-items-center">
+                        <div class="col-md-2 note-title">
+                            <h3>{{site.data.produto.features.fulltext.heading }}</h3>
+                        </div>
+                        <div class="col-md-10 ml-auto note-description">
+                            <p>{{site.data.produto.features.fulltext.text }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- /Note Box ends/ -->
+
+    </div>
+
+
+    <!-- /Features section Ends/ -->

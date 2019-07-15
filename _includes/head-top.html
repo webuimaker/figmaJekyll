@@ -1,0 +1,19 @@
+{% if page.banner.enable == 'true' %}
+	<!--/ Top banner /-->
+	<div class="container-fluid rel">
+		<div class="row">
+			<div class="bannerimg"><img src="{{ page.banner.largeImage }}" alt=""></div>
+			<div class="mobbanr"><img src="{{ page.banner.smallImage }}" alt=""></div>
+			<div class="bannerarea">
+				<div class="bannercontent {% if page.banner.textAlign == 'right' %} dwnsection {% endif %}">
+					<h1>{{ page.banner.bigText }}</h1>
+					<h3>{{ page.banner.smalltext }}</h3>
+					<div class=" new-btn">
+						<a href="{{ page.banner.buttonUrl }}" {% if page.banner.buttonSize == 'full' %}  class="btnbnr"{% endif %} >{{ page.banner.buttonText }}</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--/ Top Banner End /-->
+{% endif %}

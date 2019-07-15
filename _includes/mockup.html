@@ -1,0 +1,15 @@
+{% if site.data.landing.mockup.enable == true %}<!--/ Home Foot Banner /-->
+	<div class="container-fluid rel homefootbanner">
+		<div class="row">
+			<section class="bannerimg"><img src="{{ site.data.landing.mockup.desktopImage }}" alt=""></section>
+			<div class="mobfootbnr"><img src="{{ site.data.landing.mockup.mobileImage }}" alt=""></div>
+			<div class="bannerarea">
+				<div class="bannercontent">
+					<h1>{{ site.data.landing.mockup.description }}</h1>
+					<a href="{{ site.data.landing.mockup.CTAlink }}" class="btnbnr">{{ site.data.landing.mockup.CTAtext }}</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--/ Home Foot Banner End /-->
+{% endif %}

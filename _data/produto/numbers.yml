@@ -1,0 +1,28 @@
+SectionTitle: VEJA COMO
+SectionSubTitle: "o Cálculo Jurídico é <span>rápido</span> e <span>prático</span>"
+numbers:
+ - description: "minutos para ter o resultado da Liquidação de Sentença"
+   image: /assets/images/img-1.png
+ - description: "Espécies de Aposentadorias calculadas de uma só vez (tempo de contribuição e RMI)"
+   image: /assets/images/img-2.png
+ - description: "minuto e você tem o valor da causa pronto para a ação judicial"
+   image: /assets/images/img-3.png
+featuresCheck:
+  Heading: "Calcule facilmente o Tempo de Contribuição, RMI, Valor da Causa e Liquidação de Sentença para diversos benefícios e revisões!"
+  list:
+   - description: "Revisão da vida toda"
+   - description: "Revisões"
+   - description: "Pensão por morte"
+   - description: "Salário Maternidade"
+   - description: "Auxílio doença"
+   - description: "Aposentadoria por Invalidez"
+   - description: "Revisões antigas após 1988"
+   - description: "Aposentadorias"
+   - description: "Buraco Verde"
+   - description: "Revisão dos Tetos"
+   - description: "Buraco Negro"
+   - description: "Preparado para os Benefícios após a Reforma"
+     active: "true"
+CTA:
+ text: "Quero usar o Cálculo Jurídico Hoje"
+ url: "#"

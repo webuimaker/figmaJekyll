@@ -1,0 +1,17 @@
+<div class="container mt-5 footrow">
+	<div class="row">
+		{% for item in site.data.produto.featuresCloumn %}
+			<div class="col-md-4">
+				<div class="footcol">
+					<h3 class="mb-4">{{ item.heading }}</h3>
+					<p>{{ item.description }}</p>
+					<ul>
+						{% for itemList in item.list %}					 
+							<li>{{ itemList.item }}</li>
+						{% endfor %}
+					</ul>
+				</div>
+			</div>
+		{% endfor %}
+	</div>
+</div>
